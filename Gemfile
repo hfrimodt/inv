@@ -8,6 +8,10 @@ gem 'rails', '3.0.5'
 #gem 'sqlite3'
 gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 
+#Netzke
+gem 'netzke-core', :git => "git://github.com/skozlov/netzke-core.git"
+gem 'netzke-basepack', :git => "git://github.com/skozlov/netzke-basepack.git"
+gem 'will_paginate', '~>3.0.pre2'
 # Use unicorn as the web server
 # gem 'unicorn'
 
