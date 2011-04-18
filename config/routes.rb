@@ -2,7 +2,10 @@ Inv::Application.routes.draw do
 #  get "welcome/index"
 
   # The priority is based upon order of creation:
-    netzke
+get "loose_components/index"
+
+
+  netzke
   # first created -> highest priority.
       root :to => "welcome#index"
         # ...
@@ -18,6 +21,7 @@ Inv::Application.routes.draw do
   #   resources :products
 
 resources :locations
+resources :items
 
   # Sample resource route with options:
   #   resources :products do
@@ -61,5 +65,7 @@ resources :locations
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+ match 'components/:component' => 'components#index', :as => "components"
+# match ':controller(/:action(/:id(.:format)))'
+match ':controller(/:action(/:id(.:format)))'
 end
