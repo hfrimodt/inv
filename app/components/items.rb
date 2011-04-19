@@ -45,9 +45,6 @@ class Items < Netzke::Basepack::BorderLayoutPanel
    JS
 
   endpoint :select_category do |params|
-  end
-
-  def select_category(params)
     logger.info "!!! params[:boss_id]: #{params[:boss_id]}\n"
   end
 
