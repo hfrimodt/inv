@@ -19,7 +19,8 @@ class Items < Netzke::Basepack::BorderLayoutPanel
         :title => "Items",
         :class_name => "Netzke::Basepack::GridPanel",
         :model => "Item",
-        :height => 150,
+        #:columns => [:location_id, :category__category_name, :model, :name, :serial_number],
+        :height => 250,
         :split => true
       }]
     )
