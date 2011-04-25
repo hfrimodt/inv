@@ -5,7 +5,7 @@ Inv::Application.routes.draw do
 get "loose_components/index"
 
 
-  netzke
+ # netzke
   # first created -> highest priority.
       root :to => "welcome#index"
         # ...
